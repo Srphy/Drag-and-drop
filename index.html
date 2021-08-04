@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and drop</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+
+    <script src="./src/jquery.js"></script>
+</head>
+
+<body>
+    <div id="blocfond">
+        <div id="backfond">
+            <input type="file" id="dropzone" onchange="readURL(event)">
+            <img id="drag" src="./src/assets/drag.png" />
+        </div>
+
+        <img id="fond" src="">
+
+        <div id="container"><button class="clear" id="clear" onclick="clearimg();">X</button></div>
+    </div>
+
+    <script src="./index.js" defer></script>
+</body>
+
+</html>
